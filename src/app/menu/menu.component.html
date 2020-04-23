@@ -1,7 +1,7 @@
 <div class="container">
   <ul class="level-1">
     <li *ngFor="let item of items">
-      {{ item.title }}
+      {{ item.title }} <fa-icon [icon]="faChevronDown"></fa-icon>
       <ul class="level-2"
           *ngIf="item.items && item.items.length">
         <li *ngFor="let childItem of item.items">{{ childItem }}</li>

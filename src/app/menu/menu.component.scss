@@ -8,9 +8,21 @@
 
     &.level-1 {
       display: flex;
+      color: #03401f;
 
       li {
-        padding: 0 20px 0 0;
+        border-right: 1px solid #000;
+        font-size: 20px;
+        padding: 0 20px;
+        min-width: 20%;
+
+        fa-icon {
+          color: #666;
+        }
+
+        &:last-child {
+          border: 0;
+        }
 
         &:hover {
           .level-2 {
@@ -21,7 +33,7 @@
 
       .level-2 {
         background: #fff;
-        border: 1px solid #03fce3;
+        border: 1px solid #03401f;
         display: none;
         position: absolute;
         padding: 0;
@@ -32,6 +44,7 @@
 
           &:hover {
             background: #52bab0;
+            color: #fff;
           }
         }
       }
