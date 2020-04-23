@@ -1,4 +1,13 @@
 .container {
+  display: flex;
   margin: 20px auto;
   width: 1000px;
+
+  .left {
+    width: 480px;
+
+    img {
+      width: 480px;
+    }
+  }
 }

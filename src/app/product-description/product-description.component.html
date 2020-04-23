@@ -1,1 +1,10 @@
-<div class="container">product-description works!</div>
+<div class="container">
+  <div class="left">
+    <img src="/assets/{{product.imageBody}}">
+  </div>
+  <div class="right">
+    <ul>
+      <li *ngFor="let line of product.longDes">{{line}}</li>
+    </ul>
+  </div>
+</div>

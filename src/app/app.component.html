@@ -6,10 +6,10 @@
     <app-menu [items]="menuItems"></app-menu>
   </div>
   <div class="top-section">
-    <app-product-overview></app-product-overview>
+    <app-product-overview [product]="product"></app-product-overview>
   </div>
   <div class="body-section">
-    <app-product-description></app-product-description>
+    <app-product-description [product]="product"></app-product-description>
   </div>
   <div class="review">
     <app-product-review></app-product-review>
