@@ -1,9 +1,14 @@
 .container {
+  color: #fff;
   padding: 20px 0;
   width: 1000px;
   display: flex;
   margin: 0 auto;
   width: 1000px;
+
+  ul {
+    list-style: none;
+  }
 
   .left {
     width: 480px;
