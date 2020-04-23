@@ -1,0 +1,24 @@
+{
+  "menu": [
+    {
+      "title": "Camping",
+      "items": ["Tent", "Sleeping Bag"]
+    },
+    {
+      "title": "Clothing",
+      "items": ["Outwear", "Shoes", "Gloves", "Hats"]
+    },
+    {
+      "title": "Fishing",
+      "items": ["Fishing Pole", "Bait"]
+    },
+    {
+      "title": "Hiking",
+      "items": ["Boots", "Backpack"]
+    },
+    {
+      "title": "Biking",
+      "items": ["Sunglasses", "Biking Pants"]
+    }
+  ]
+}

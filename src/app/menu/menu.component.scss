@@ -1,0 +1,29 @@
+.container {
+  margin: 20px auto;
+  width: 1000px;
+
+  ul {
+    background: #fff;
+    list-style: none;
+
+    &.level-1 {
+      display: flex;
+
+      li {
+        padding: 0 10px 0 0;
+
+        &:hover {
+          .level-2 {
+            display: block;
+          }
+        }
+      }
+
+      .level-2 {
+        background: #fff;
+        display: none;
+        position: absolute;
+      }
+    }
+  }
+}
