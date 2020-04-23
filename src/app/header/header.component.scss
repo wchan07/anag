@@ -1,6 +1,13 @@
 .container {
   color: #fff;
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 20px 0;
   width: 1000px;
+
+  .slice-1 {
+    width: 400px;
+    height: 105px;
+  }
 }
