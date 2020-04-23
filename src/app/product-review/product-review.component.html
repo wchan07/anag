@@ -1,7 +1,8 @@
 <div class="container">
   <div class="review">
     <div class="left"></div>
-    <div class="right"><h2>Reviews</h2></div>
+    <div class="right"><h2>Reviews</h2>
+      <a href="javascript:void(0)" (click)="open(mymodal)">Write a review</a></div>
   </div>
   <div *ngFor="let review of reviews" class="review">
     <div class="left">
@@ -15,4 +16,24 @@
       </p>
     </div>
   </div>
+   
+<ng-template #mymodal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Add a review</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+    Review title: <input type="text">
+      <textarea rows="10" cols="40" placeholder="Write your review">
+
+      </textarea>
+  </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Submit review</button>
+  </div>
+</ng-template>
 </div>
