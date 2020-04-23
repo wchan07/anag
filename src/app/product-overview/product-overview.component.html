@@ -7,5 +7,20 @@
     <ul>
       <li *ngFor="let line of product.shortDes">{{line}}</li>
     </ul>
+    <div class="form-row">
+      <select>
+        <option>Select a Size</option>
+      </select>
+      <select>
+        <option>Select a color</option>
+      </select>
+    </div>
+    <div class="form-row">Quantity</div>
+    <div> 
+      <input type="number" min="1" value="1" />
+      <button class="add-to-cart">
+        Add to cart
+      </button>
+    </div>
   </div>
 </div>
