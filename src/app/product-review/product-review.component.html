@@ -1,1 +1,18 @@
-<div class="container">product-review works!</div>
+<div class="container">
+  <div class="review">
+    <div class="left"></div>
+    <div class="right"><h2>Reviews</h2></div>
+  </div>
+  <div *ngFor="let review of reviews" class="review">
+    <div class="left">
+      <div><img src="assets/{{review.image}}"></div>
+      {{review.name}}
+    </div>
+    <div class="right">
+      <div>{{review.title}} {{ review.date}} {{review.rating}}</div>
+      <p>
+        {{review.text}}
+      </p>
+    </div>
+  </div>
+</div>

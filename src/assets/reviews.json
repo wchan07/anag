@@ -1,0 +1,20 @@
+{
+  "reviews": [
+    {
+      "image": "reviewer1.png",
+      "name": "Shaun White",
+      "title": "This was great",
+      "text": "Review text 1 review text 1 review text 1 review text 1 review text 1 review text 1",
+      "rating": 3.5,
+      "date": "08/20/2020"
+    },
+    {
+      "image": "reviewer2.png",
+      "name": "Jennie Lauren",
+      "title": "Loved it",
+      "text": "Review text 2 review text 2 review text 2 review text 2 review text 2 review text 2",
+      "rating": 3,
+      "date": "01/13/2020"
+    }
+  ]
+}

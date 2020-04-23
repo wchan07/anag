@@ -14,3 +14,16 @@ export interface Product {
   imageTop: string;
   imageBody: string;
 }
+
+export interface ReviewsResponse {
+  reviews: Review[];
+}
+
+export interface Review {
+  image: string;
+  name: string;
+  title: string;
+  text: string;
+  rating: number;
+  date: string;
+}
