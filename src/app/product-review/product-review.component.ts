@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Review } from '../contracts';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 
@@ -7,15 +7,12 @@ import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
   templateUrl: './product-review.component.html',
   styleUrls: ['./product-review.component.scss']
 })
-export class ProductReviewComponent implements OnInit {
+export class ProductReviewComponent {
   @Input() reviews: Review[];
   
   constructor(private modalService: NgbModal) { }
 
   closeResult: string;
-
-  ngOnInit(): void {
-  }
 
   open(content) {
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {

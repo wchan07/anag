@@ -6,12 +6,6 @@ import { Product } from '../contracts';
   templateUrl: './product-description.component.html',
   styleUrls: ['./product-description.component.scss']
 })
-export class ProductDescriptionComponent implements OnInit {
+export class ProductDescriptionComponent {
   @Input() product: Product;
-  
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }
